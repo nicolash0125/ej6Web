@@ -38,11 +38,11 @@ function mcc(event,data){
 
         }
         else{   //Negative 
-            if (element.events.some(ev=>ev==event)){    //True negative 
-                tn += 1
-            }
-            else{   //False negative
+            if (element.events.some(ev=>ev==event)){    //False negative 
                 fn += 1
+            }
+            else{   //True negative
+                tn += 1
             }
         }
     })
